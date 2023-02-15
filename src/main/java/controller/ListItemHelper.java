@@ -19,7 +19,7 @@ import javax.persistence.TypedQuery;
 import model.ListItem;
 
 public class ListItemHelper {
-	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("Week5WebShoppingList");
+	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("shoppingListApp");
 
 	public void insertItem(ListItem li) {
 		EntityManager em = emfactory.createEntityManager();

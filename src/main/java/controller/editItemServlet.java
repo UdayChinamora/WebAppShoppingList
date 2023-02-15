@@ -11,16 +11,16 @@ import javax.servlet.http.HttpServletResponse;
 import model.ListItem;
 
 /**
- * Servlet implementation class editItemServlet
+ * Servlet implementation class EditItemServlet
  */
 @WebServlet("/editItemServlet")
-public class editItemServlet extends HttpServlet {
+public class EditItemServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public editItemServlet() {
+    public EditItemServlet() {
         super();
     }
     /**
@@ -40,7 +40,7 @@ public class editItemServlet extends HttpServlet {
 
 		dao.updateItem(itemToUpdate);
 
-		getServletContext().getRequestDispatcher("/ViewAllItemsServlet").forward(request, response);
+		getServletContext().getRequestDispatcher("/viewAllItemsServlet").forward(request, response);
 
 }
 }
